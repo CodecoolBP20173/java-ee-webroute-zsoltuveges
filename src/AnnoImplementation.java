@@ -1,15 +1,15 @@
 public class AnnoImplementation {
-    @WebRoute(url = "/test")
+    @WebRoute(path = "/test")
     public String testRoute() {
         return "Test";
     }
 
-    @WebRoute(url = "/index")
+    @WebRoute(path = "/index")
     public String index() {
         return "Index";
     }
 
-    @WebRoute(url = "/littleduck")
+    @WebRoute(path = "/littleduck")
     public String littleDuck() {
         return "HAP-HAP-HAP";
     }

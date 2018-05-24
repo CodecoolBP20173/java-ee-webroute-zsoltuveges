@@ -39,7 +39,7 @@ public class MyHandler implements HttpHandler {
         Method method = null;
         for (Method m : myClass.getMethods()) {
             if (m.isAnnotationPresent(WebRoute.class)) {
-                if (m.getAnnotation(WebRoute.class).url().equals(route)) {
+                if (m.getAnnotation(WebRoute.class).path().equals(route)) {
                     method = m;
                 }
             }
